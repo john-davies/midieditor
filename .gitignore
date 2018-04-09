@@ -1,0 +1,17 @@
+# Gitignore fie for midieditor
+
+# Object files
+*.o
+
+#Executables ( easier to list these manually )
+midieditor
+
+# Batch files
+fetch.bat
+
+# Files from MidiFile
+libmidifile.a
+MidiEvent.h
+MidiEventList.h
+MidiFile.h
+MidiMessage.h
