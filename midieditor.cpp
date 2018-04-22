@@ -276,7 +276,7 @@ bool track_name( int track_no, string name )
         {
           new_name[ i + 3 ] = name.at(i);
         }
-        midifile[track_no].add( j, new_name );
+        midifile[track_no].insert( j, new_name );
       }
     }
   }
@@ -302,7 +302,7 @@ bool program_change( int track_no, int prog_no )
 
   // Build the new event and add at the start of the track
   MidiEvent new_prog( PROGRAM_CHANGE, prog_no );
-  midifile[track_no].add( 0, new_prog );
+  midifile[track_no].insert( 0, new_prog );
 
   return true;
 }
